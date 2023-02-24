@@ -1,0 +1,48 @@
+input[type='file'] {
+	display: none;
+}
+.preview-image {
+	position: relative;
+	margin: 0 0.5rem 0.5rem 0;
+}
+
+.preview-image img {
+	width: 180px;
+	height: auto;
+}
+.preview-remove {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #666;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.preview-image:hover .preview-remove {
+	opacity: 1;
+}
+.preview-image:hover .info {
+	opacity: 1;
+}
+.info {
+	opacity: 0;
+	background-color: #666;
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	right: 0;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.2s;
+	padding: 0 5px;
+}

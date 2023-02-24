@@ -1,0 +1,52 @@
+.vmodal.open .modal-back,
+.vmodal.open .modal {
+	opacity: 1;
+	z-index: 200;
+}
+.modal-back,
+.modal {
+	opacity: 0;
+	z-index: -1;
+}
+.modal-back {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.modal {
+	width: 300px;
+	height: 400px;
+	top: 5rem;
+	right: 0;
+	background-color: #fff;
+	border-radius: 20px;
+	position: absolute;
+	transform: translateX(-200px);
+	transition: 0.4s ease-in;
+	padding: 1rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	transition: all 0.2s;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type='text'] {
+	border: none;
+	border-radius: 15px;
+	padding: 0.5rem 0.8rem;
+	background-color: rgb(187, 187, 187);
+	margin: 0.5rem 0;
+	outline: none;
+	width: 200px;
+}
+
+input[placeholder='Description'] {
+	height: 100px;
+}
+.vision {
+	display: none;
+}
